@@ -8,12 +8,14 @@ metadata:
 spec:
   replicas: 4
   template:
-   metadata:
-     name: myapp-pod
-     labels:
-       app: myapp
-   spec:
-     containers:
-       - name: nginx
-         image: nginx
+    metadata:
+      name: myapp-pod
+      labels:
+        app: myapp
+    spec:
+      containers:
+        - name: nginx
+          image: nginx
   selector:
+    matchLabels: 
+      app: myapp
