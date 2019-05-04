@@ -4,8 +4,10 @@ metadata:
   name: frontend
   labels:
     app: myapp
-    
 spec:
   type:
-  selector:
   ports:
+    - port: 80
+      targetPort: 80
+     
+  selector:
