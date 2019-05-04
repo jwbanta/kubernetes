@@ -4,5 +4,8 @@ metadata:
   name: frontend
   labels:
     app: myapp
-
+    
 spec:
+  type:
+  selector:
+  ports:
